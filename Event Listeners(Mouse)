@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code IO</title>
+</head>
+<body>
+    <button id="sj">Irukku</button>
+
+    <script>
+        let btn = document.getElementById('sj');
+
+        // Click event
+        btn.addEventListener('click', (event) => {
+            btn.textContent = 'ennathu ithu';
+            console.log('clicked');
+        });
+
+        // Mouseover event
+        btn.addEventListener('mouseover', (event) => {
+            btn.textContent = 'Aana Illa';
+            console.log('mouseover');
+        });
+
+        // Mouseout event
+        btn.addEventListener('mouseout', (event) => {
+            btn.textContent = 'Irukku';  // Restores original text
+            console.log('mouseout');
+        });
+    </script>
+</body>
+</html>
