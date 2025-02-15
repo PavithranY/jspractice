@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code IO</title>
+</head>
+<body>
+    <button id="sj">1</button>
+
+    <script>
+        let btn = document.getElementById('sj');
+
+        document.addEventListener('keydown', (event) => {
+            console.log(event.key);  // Logs the key pressed
+
+            switch (event.key) {
+                case 'ArrowUp':  // Corrected 'Arrowlp' to 'ArrowUp'
+                    btn.textContent = Number(btn.textContent) + 1;
+                    break;
+                case 'ArrowDown':
+                    btn.textContent = Number(btn.textContent) - 1; // Fixed incorrect syntax
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>
